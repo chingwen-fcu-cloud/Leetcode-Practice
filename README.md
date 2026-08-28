@@ -2,7 +2,7 @@
 
 My LeetCode problem-solving record using C++.
 
-<img align="center" height="250" src="https://leetcard.jacoblin.cool/你的LeetCode帳號?ext=heatmap"/>
+<img align="center" height="250" src="https://leetcard.jacoblin.cool/chingwen-fcu-cloud?ext=heatmap"/>
 
 ---
 
