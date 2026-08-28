@@ -3,16 +3,14 @@ name: Update LeetCode Progress
 on:
   push:
     branches:
-    - main
-    paths:
-      - "ans/leetcode_75/**/*.cpp"
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   update-progress:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -21,22 +19,28 @@ jobs:
       - name: Count LeetCode 75 problems
         run: |
           COUNT=$(find ans/leetcode_75 -name "*.cpp" | wc -l)
-          echo "COUNT=$COUNT" >> $GITHUB_ENV
+          echo "LEETCODE75_COUNT=$COUNT" >> $GITHUB_ENV
+
+      - name: Count Blind 75 problems
+        run: |
+          COUNT=$(find ans/blind_75 -name "*.cpp" | wc -l)
+          echo "BLIND75_COUNT=$COUNT" >> $GITHUB_ENV
 
       - name: Update README
         run: |
-          sed -i -E "s/LeetCode_75-[0-9]+_%2F_75-blue/LeetCode_75-${COUNT}_%2F_75-blue/" README.md
+          sed -i "s/LeetCode_75-[0-9]*_%2F_75-blue/LeetCode_75-${LEETCODE75_COUNT}_%2F_75-blue/" README.md
+          sed -i "s/Blind_75-[0-9]*_%2F_75-blue/Blind_75-${BLIND75_COUNT}_%2F_75-blue/" README.md
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes to commit"
           else
-            git commit -m "Update LeetCode 75 progress"
+            git commit -m "Update LeetCode progress"
             git push
           fi
