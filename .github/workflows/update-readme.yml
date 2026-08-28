@@ -1,0 +1,42 @@
+name: Update LeetCode Progress
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+      - "ans/leetcode_75/**/*.cpp"
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Count LeetCode 75 problems
+        run: |
+          COUNT=$(find ans/leetcode_75 -name "*.cpp" | wc -l)
+          echo "COUNT=$COUNT" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i -E "s/LeetCode_75-[0-9]+_%2F_75-blue/LeetCode_75-${COUNT}_%2F_75-blue/" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update LeetCode 75 progress"
+            git push
+          fi
