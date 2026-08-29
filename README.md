@@ -8,7 +8,7 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 LeetCode 75
 
-![LeetCode 75](https://img.shields.io/badge/LeetCode_75-1_%2F_75-blue)
+![LeetCode 75](https://img.shields.io/badge/LeetCode_75-2_%2F_75-blue)
 
 - [Problem Source](https://leetcode.com/studyplan/leetcode-75/)
 - [Problem Solving Files](./ans/leetcode_75)
@@ -22,8 +22,8 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 Total
 
-![Total](https://img.shields.io/badge/Total-15-blue?style=social)
-![Easy](https://img.shields.io/badge/Easy-11-blue?style=social)
+![Total](https://img.shields.io/badge/Total-16-blue?style=social)
+![Easy](https://img.shields.io/badge/Easy-12-blue?style=social)
 ![Medium](https://img.shields.io/badge/Medium-3-blue?style=social)
 ![Hard](https://img.shields.io/badge/Hard-1-blue?style=social)
 
