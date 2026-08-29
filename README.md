@@ -22,10 +22,10 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 Total
 
-![Total](https://img.shields.io/badge/Total-0-blue?style=social)
-![Easy](https://img.shields.io/badge/Easy-0-blue?style=social)
-![Medium](https://img.shields.io/badge/Medium-0-blue?style=social)
-![Hard](https://img.shields.io/badge/Hard-0-blue?style=social)
+![Total](https://img.shields.io/badge/Total-14-blue?style=social)
+![Easy](https://img.shields.io/badge/Easy-10-blue?style=social)
+![Medium](https://img.shields.io/badge/Medium-3-blue?style=social)
+![Hard](https://img.shields.io/badge/Hard-1-blue?style=social)
 
 - [Problem Source](https://leetcode.com/problemset/)
 - [Problem Solving Files](./ans/total)
