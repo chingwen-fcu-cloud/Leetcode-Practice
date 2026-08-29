@@ -8,14 +8,24 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 LeetCode 75
 
-![LeetCode 75](https://img.shields.io/badge/LeetCode_75-1_%2F_75-blue?style=badge)
+![LeetCode 75](https://img.shields.io/badge/LeetCode_75-1_%2F_75-blue)
 
 - [Problem Source](https://leetcode.com/studyplan/leetcode-75/)
 - [Problem Solving Files](./ans/leetcode_75)
 
 ### 📋 Blind 75
 
-![Blind 75](https://img.shields.io/badge/Blind_75-2_%2F_75-blue?style=badge)
+![Blind 75](https://img.shields.io/badge/Blind_75-2_%2F_75-blue)
 
 - [Problem Source](https://leetcode.com/problem-list/xoqag3yj/)
 - [Problem Solving Files](./ans/blind_75)
+
+### 📋 Total
+
+![Total](https://img.shields.io/badge/Total-0-blue?style=social)
+![Easy](https://img.shields.io/badge/Easy-0-blue?style=social)
+![Medium](https://img.shields.io/badge/Medium-0-blue?style=social)
+![Hard](https://img.shields.io/badge/Hard-0-blue?style=social)
+
+- [Problem Source](https://leetcode.com/problemset/)
+- [Problem Solving Files](./ans/total)

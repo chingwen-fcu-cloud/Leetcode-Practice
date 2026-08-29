@@ -26,10 +26,34 @@ jobs:
           COUNT=$(find ans/blind_75 -name "*.cpp" | wc -l)
           echo "BLIND75_COUNT=$COUNT" >> $GITHUB_ENV
 
+      - name: Count Total problems
+        run: |
+          COUNT=$(find ans/total -name "*.cpp" | wc -l)
+          echo "TOTAL_COUNT=$COUNT" >> $GITHUB_ENV
+
+      - name: Count Easy problems
+        run: |
+          COUNT=$(find ans/total/easy -name "*.cpp" | wc -l)
+          echo "EASY_COUNT=$COUNT" >> $GITHUB_ENV
+
+      - name: Count Medium problems
+        run: |
+          COUNT=$(find ans/total/medium -name "*.cpp" | wc -l)
+          echo "MEDIUM_COUNT=$COUNT" >> $GITHUB_ENV
+
+      - name: Count Hard problems
+        run: |
+          COUNT=$(find ans/total/hard -name "*.cpp" | wc -l)
+          echo "HARD_COUNT=$COUNT" >> $GITHUB_ENV
+
       - name: Update README
         run: |
           sed -i "s/LeetCode_75-[0-9]*_%2F_75-blue/LeetCode_75-${LEETCODE75_COUNT}_%2F_75-blue/" README.md
           sed -i "s/Blind_75-[0-9]*_%2F_75-blue/Blind_75-${BLIND75_COUNT}_%2F_75-blue/" README.md
+          sed -i "s/Total-[0-9]*-blue/Total-${TOTAL_COUNT}-blue/" README.md
+          sed -i "s/Easy-[0-9]*-blue/Easy-${EASY_COUNT}-blue/" README.md
+          sed -i "s/Medium-[0-9]*-blue/Medium-${MEDIUM_COUNT}-blue/" README.md
+          sed -i "s/Hard-[0-9]*-blue/Hard-${HARD_COUNT}-blue/" README.md
 
       - name: Commit and push changes
         run: |
