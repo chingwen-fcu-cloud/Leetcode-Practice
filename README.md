@@ -15,7 +15,7 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 Blind 75
 
-![Blind 75](https://img.shields.io/badge/Blind_75-2_%2F_75-blue)
+![Blind 75](https://img.shields.io/badge/Blind_75-3_%2F_75-blue)
 
 - [Problem Source](https://leetcode.com/problem-list/xoqag3yj/)
 - [Problem Solving Files](./ans/blind_75)
