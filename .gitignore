@@ -216,6 +216,7 @@ marimo/_lsp/
 #Folder for some practice code
 practice/
 output/
+Leetcode-Practice/
 
 __marimo__/
 
