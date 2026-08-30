@@ -15,15 +15,15 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 Blind 75
 
-![Blind 75](https://img.shields.io/badge/Blind_75-5_%2F_75-blue)
+![Blind 75](https://img.shields.io/badge/Blind_75-7_%2F_75-blue)
 
 - [Problem Source](https://leetcode.com/problem-list/xoqag3yj/)
 - [Problem Solving Files](./ans/blind_75)
 
 ### 📋 Total
 
-![Total](https://img.shields.io/badge/Total-18-blue?style=social)
-![Easy](https://img.shields.io/badge/Easy-14-blue?style=social)
+![Total](https://img.shields.io/badge/Total-20-blue?style=social)
+![Easy](https://img.shields.io/badge/Easy-16-blue?style=social)
 ![Medium](https://img.shields.io/badge/Medium-3-blue?style=social)
 ![Hard](https://img.shields.io/badge/Hard-1-blue?style=social)
 
