@@ -22,8 +22,8 @@ My LeetCode problem-solving record using C++.
 
 ### 📋 Total
 
-![Total](https://img.shields.io/badge/Total-20-blue?style=social)
-![Easy](https://img.shields.io/badge/Easy-16-blue?style=social)
+![Total](https://img.shields.io/badge/Total-21-blue?style=social)
+![Easy](https://img.shields.io/badge/Easy-17-blue?style=social)
 ![Medium](https://img.shields.io/badge/Medium-3-blue?style=social)
 ![Hard](https://img.shields.io/badge/Hard-1-blue?style=social)
 
